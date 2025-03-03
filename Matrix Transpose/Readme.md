@@ -1,0 +1,3 @@
+- Read from `input[y * cols + x]`  (standard row major input)
+- Write to `output[x * rows + y]`  (Transposed index (easy to uderstand by thinking about shapes e.g. (A by P -> P by A)))
+- Swaps row and column indices.
