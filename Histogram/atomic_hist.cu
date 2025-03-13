@@ -7,7 +7,7 @@ __global__ void atomic_histogram(int* input, int* output, const int num_bins, co
 
     if (tid < N ){
         int bin = input[tid];
-        if (bin < num_bins){
+        if (bin >= 0 && bin < num_bins){
             atomicAdd(&output[bin], 1);
     }
     }
